@@ -1,0 +1,22 @@
+{
+  "name": "backend_pdt",
+  "version": "1.0.0",
+  "description": "Backend web for pdt project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siakad-pdt/backend_web_pdt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siakad-pdt/backend_web_pdt/issues"
+  },
+  "homepage": "https://github.com/siakad-pdt/backend_web_pdt#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
