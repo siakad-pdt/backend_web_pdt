@@ -4,6 +4,8 @@ const app = express();
 const server = require("http").Server(app)
 const mainRoute = require("./routes");
 
+const models = require("./models");
+
 //DB Connection
 require("./config/dbConfig")();
 
@@ -40,6 +42,8 @@ app.use(mainRoute);
 app.use(require("./middlewares/errHandler"));
 
 //Setup Server
-server.listen("8080", () => {
-    console.log(`Server running at 8080`)
-});
+models.sequelize.sync().then((req) => {
+    server.listen("8080", () => {
+        console.log(`Server running at 8080`)
+    });
+})
