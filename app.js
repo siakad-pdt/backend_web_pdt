@@ -5,7 +5,7 @@ const server = require("http").Server(app)
 const mainRoute = require("./routes");
 
 //DB Connection
-require("./configuration/dbConfig")();
+require("./config/dbConfig")();
 
 //Security
 const whitelist = [
