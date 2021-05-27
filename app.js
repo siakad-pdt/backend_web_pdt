@@ -43,7 +43,7 @@ app.use(require("./middlewares/errHandler"));
 
 //Setup Server
 models.sequelize.sync().then((req) => {
-    server.listen("8080", () => {
+    server.listen("5000", () => {
         console.log(`Server running at 8080`)
     });
 })
