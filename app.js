@@ -1,3 +1,5 @@
+require('dotenv').config();
+const PORT = process.env.PORT;
 const express = require("express")
 const logger = require("morgan")
 const app = express();
@@ -43,7 +45,7 @@ app.use(require("./middlewares/errHandler"));
 
 //Setup Server
 models.sequelize.sync().then((req) => {
-    server.listen("5000", () => {
-        console.log(`Server running at 5000`)
+    server.listen(PORT, () => {
+        console.log(`Server running at ${PORT}`)
     });
 })
