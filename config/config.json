@@ -1,15 +1,7 @@
 {
-  //"development": {
-   // "username": "root",
-    //"password": null,
-    //"database": "backend_pdt",
-    //"host": "localhost",
-    //"dialect": "mysql",
-    //"logging": false
-  //},
   "development": {
     "username": "ba6ccd2c690c5e",
-    "password": '66d67011',
+    "password": "66d67011",
     "database": "heroku_41726c0217cc5ee",
     "host": "us-cdbr-east-03.cleardb.com",
     "dialect": "mysql",
